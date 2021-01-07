@@ -43,7 +43,7 @@ function generatePassword() {
   if (!passwordNumbers && !passwordSpecialCharacters && !passwordLowercase && !passwordUppercase) {
     alert("You don't get a password!");
 
-  //if user answers all questions, then generate password
+  //if user answers all questions, then a password is generated
   } else if (passwordNumbers && passwordSpecialCharacters && passwordLowercase && passwordUppercase) {
     generatedPassword = specialCharacters.concat(alphabet, numbers, upperAlphabet);
     console.log(generatedPassword);
@@ -51,11 +51,11 @@ function generatePassword() {
   } else if (passwordNumbers && passwordSpecialCharacters && passwordLowercase) {
     generatedPassword = specialCharacters.concat(alphabet,numbers);
     console.log(generatedPassword);
-  //this is similar as above, just different aswers
+  //if user answers numbers, special characters, and uppercase
   } else if (passwordNumbers && passwordSpecialCharacters && passwordUppercase) {
     generatedPassword = specialCharacters.concat(numbers, upperAlphabet);
     console.log(generatedPassword);
-  //if user aswers for numbers, lowercase, and uppercase
+  //if user answers for numbers, lowercase, and uppercase
   } else if (passwordNumbers && passwordLowercase && passwordUppercase) {
     generatedPassword = numbers.concat(alphabet, upperAlphabet);
     console.log(generatedPassword);
