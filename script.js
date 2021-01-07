@@ -67,6 +67,22 @@ function generatePassword() {
   } else if (passwordNumbers && passwordUppercase) {
     generatedPassword = numbers.concat(upperAlphabet);
     console.log(generatedPassword);
+  //if user answers for numbers and special characters
+  } else if (passwordNumbers && passwordSpecialCharacters) {
+    generatedPassword = numbers.concat(specialCharacters);
+    console.log(generatedPassword);
+  //if user answers for lowercase and uppercase
+  } else if (passwordLowercase && passwordUppercase) {
+    generatedPassword = alphabet.concat(upperAlphabet);
+    console.log(generatedPassword);
+  //if user answers for lowercase and special characters
+  } else if (passwordLowercase && passwordSpecialCharacters) {
+    generatedPassword = alphabet.concat(specialCharacters);
+    console.log(generatedPassword);
+  //if user answers for special characters and uppercase
+  } else if (passwordSpecialCharacters && passwordUppercase) {
+    generatedPassword = specialCharacters.concat(upperAlphabet);
+    console.log(generatedPassword);
   }
 
 
