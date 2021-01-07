@@ -101,21 +101,21 @@ function generatePassword() {
   //an empty variable for the user
   var passwordOutput = [];
 
-  //this is what randomizes
-  for (var i = 0; i < enter; i++) {
+  //this is what randomizes the password
+  for (var i = 0; i <= passwordLength; i++) {
     var userInput = generatedPassword[Math.floor(Math.random() * generatedPassword.length)];
     passwordOutput.push(userInput);
   }
-
-  //var finalGenPass = passwordOutput.join("");
-  //UserInput(finalGenPass);
-  //return(finalGenPass);
-
+  //this creates and returns a string by concatenating all the elements in the array
+  var finalGenPass = passwordOutput.join("");
+  UserInput(finalGenPass);
+  return(finalGenPass);
 };
 
-//function UserInput(finalGenPass) {
-  //document.getElementById("password").textContent=finalGenPass;
-//}
+//this is what connects the password to the textbox
+function UserInput(finalGenPass) {
+  document.getElementById("password").textContent=finalGenPass;
+}
 
 // Write password to the #password input
 function writePassword() {
