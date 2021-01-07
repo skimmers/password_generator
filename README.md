@@ -8,7 +8,7 @@ Please check to see if the assignment goals are met.
 
 ## Goal
 
-The goal is to create a random password generator using javascript. 
+The goal is to create a random password generator using javascript. However, I have create a password depending on the user's answers to the prompts. 
 
 These are the requirements I had to meet: 
 
@@ -16,6 +16,6 @@ These are the requirements I had to meet:
 
 # Purpose
 
-I believe the purpose of this assignment was to introduce the utilization of bootstrap and build our css skills.
+I believe the purpose of this assignment was to help me get comfortable around coding javascript so that I understand how the language works. 
 
-I learned how to link to bootstrap and create responsive sites while still styling with css. 
+This assignment was challenging but it did teach me how to use variable ,arrays, if-else statements, and functions. 
