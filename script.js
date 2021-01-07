@@ -83,13 +83,39 @@ function generatePassword() {
   } else if (passwordSpecialCharacters && passwordUppercase) {
     generatedPassword = specialCharacters.concat(upperAlphabet);
     console.log(generatedPassword);
+  //if user only chooses 1 criteria
+  } else if (passwordUppercase) {
+    generatedPassword = upperAlphabet;
+    console.log(generatedPassword);
+  } else if (passwordSpecialCharacters) {
+    generatedPassword = specialCharacters;
+    console.log(generatedPassword);
+  } else if (passwordNumbers) {
+    generatedPassword = numbers;
+    console.log(generatedPassword);
+  }else if (passwordLowercase) {
+    generatedPassword = alphabet;
+    console.log(generatedPassword);
+  };
+
+  //an empty variable for the user
+  var passwordOutput = [];
+
+  //this is what randomizes
+  for (var i = 0; i < enter; i++) {
+    var userInput = generatedPassword[Math.floor(Math.random() * generatedPassword.length)];
+    passwordOutput.push(userInput);
   }
 
-
-
-
+  //var finalGenPass = passwordOutput.join("");
+  //UserInput(finalGenPass);
+  //return(finalGenPass);
 
 };
+
+//function UserInput(finalGenPass) {
+  //document.getElementById("password").textContent=finalGenPass;
+//}
 
 // Write password to the #password input
 function writePassword() {
