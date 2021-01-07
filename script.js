@@ -10,15 +10,14 @@ var generatedPassword;
 specialCharacters = [ "+", "-", "&&", "||", "!", "(", ")", "{", "}", "[", "]", "^", "~", "*", "?", ":"];
 
 //created an array including the alphabet
-alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+alphabet = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+
+//created an array including Uppercase alphabet
+upperAlphabet = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 
 //created an array of single digit numbers
 numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-//converts lowercase to uppercase
-var uppercaseConverter = function (x) {
-  return uppercaseConverter();
-}
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
@@ -45,9 +44,10 @@ function generatePassword() {
     alert("You don't get a password!");
 
   //if user answers all questions, then generate password
-  } else if (passwordNumbers && passwordSpecialCharacters && passwordLowercase && passwordUppercase){
-    confirm("I will generate a password for you!");
-  };
+  } else if (passwordNumbers && passwordSpecialCharacters && passwordLowercase && passwordUppercase) {
+    generatedPassword = specialCharacters.concat(alphabet, numbers, upperAlphabet);
+    console.log(generatedPassword);
+  }
 
 
 
