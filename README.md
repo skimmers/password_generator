@@ -8,7 +8,7 @@ Please check to see if the assignment goals are met.
 
 ## Goal
 
-The goal is to create a random password generator using javascript. However, I have create a password depending on the user's answers to the prompts. 
+The goal is to create a random password generator using javascript. However, I have to create a password depending on the user's answers to the prompts. 
 
 These are the requirements I had to meet: 
 
