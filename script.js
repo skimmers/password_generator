@@ -4,6 +4,7 @@ var passwordNumbers;
 var passwordSpecialCharacters;
 var passwordLowercase;
 var passwordUppercase;
+var generatedPassword;
 
 
 // Assignment Code
@@ -24,9 +25,17 @@ function generatePassword() {
     passwordSpecialCharacters = confirm("Do you need special characters?");
     passwordLowercase = confirm("Do you need Lowercase letters?");
     passwordUppercase = confirm("Do you need Uppercase letters?");
-  }
-};
+  };
 
+  //if user cancels all questions, then no password alert pops up
+  if (!passwordNumbers && !passwordSpecialCharacters && !passwordLowercase && !passwordUppercase) {
+    alert("You don't get a password!");
+
+  //if user answers all questions, then generate password
+  } else if (passwordNumbers && passwordSpecialCharacters && passwordLowercase && passwordUppercase){
+    confirm("I will generate a password for you!");
+  };
+};
 
 // Write password to the #password input
 function writePassword() {
