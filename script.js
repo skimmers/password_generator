@@ -1,5 +1,5 @@
 //my variables
-var characterAmount;
+var characterLength;
 
 
 // Assignment Code
@@ -8,7 +8,12 @@ var generateBtn = document.querySelector("#generate");
 //this is my first prompt
 function generatePassword() {
   //prompting my user to choose character length
-  characterAmount = parseInt(prompt("How many characters do you want in your password? Please choose between 8 and 128"));
+  characterLength = parseInt(prompt("How many characters do you want in your password? Please choose between 8 and 128"));
+
+  //setting the first criteria for inputting character length
+  if(!characterLength || characterLength < 8 || characterLength > 128){
+    alert("You need to enter a valid value!");
+  } 
 }
 
 
