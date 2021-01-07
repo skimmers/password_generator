@@ -47,6 +47,10 @@ function generatePassword() {
   } else if (passwordNumbers && passwordSpecialCharacters && passwordLowercase && passwordUppercase) {
     generatedPassword = specialCharacters.concat(alphabet, numbers, upperAlphabet);
     console.log(generatedPassword);
+  //if user answers these three questions  
+  } else if (passwordNumbers && passwordSpecialCharacters && passwordLowercase) {
+    generatedPassword = specialCharacters.concat(alphabet,numbers);
+    console.log(generatedPassword);
   }
 
 
