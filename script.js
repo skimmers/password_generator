@@ -6,6 +6,19 @@ var passwordLowercase;
 var passwordUppercase;
 var generatedPassword;
 
+//created an array including the special characters
+specialCharacters = [ "+", "-", "&&", "||", "!", "(", ")", "{", "}", "[", "]", "^", "~", "*", "?", ":"];
+
+//created an array including the alphabet
+alphabet = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
+
+//created an array of single digit numbers
+numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+//converts lowercase to uppercase
+var uppercaseConverter = function (x) {
+  return uppercaseConverter();
+}
 
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
@@ -35,6 +48,11 @@ function generatePassword() {
   } else if (passwordNumbers && passwordSpecialCharacters && passwordLowercase && passwordUppercase){
     confirm("I will generate a password for you!");
   };
+
+
+
+
+
 };
 
 // Write password to the #password input
