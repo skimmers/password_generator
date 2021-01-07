@@ -1,10 +1,4 @@
-//my variables
-var passwordLength;
-var passwordNumbers;
-var passwordSpecialCharacters;
-var passwordLowercase;
-var passwordUppercase;
-var generatedPassword;
+
 
 //created an array including the special characters
 specialCharacters = [ "+", "-", "&&", "||", "!", "(", ")", "{", "}", "[", "]", "^", "~", "*", "?", ":"];
@@ -24,6 +18,15 @@ var generateBtn = document.querySelector("#generate");
 
 //this is my first prompt
 function generatePassword() {
+
+  //my variables
+var passwordLength;
+var passwordNumbers;
+var passwordSpecialCharacters;
+var passwordLowercase;
+var passwordUppercase;
+var generatedPassword;
+
   //prompting my user to choose character length
   passwordLength = parseInt(prompt("How many characters do you want in your password? Please choose between 8 and 128."));
 
