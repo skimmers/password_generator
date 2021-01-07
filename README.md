@@ -1,4 +1,4 @@
-# password_generator
+# Password Generator
 
 ## Installation/Deployment
 
